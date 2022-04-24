@@ -30,37 +30,80 @@
 
 </head>
 <body>
-  <!-- link to js -->
-    <script src="kowshik.js"></script>
+  
+    
     <!-- link to js swiper -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
         <nav>
-            <div class="navbar">
+            <div id="menu" class="dropdown">
+                <a herf="javascript: void(0)" class="buttonX" onclick="closeMenu()">&times;</a>
+                <div class="dropdown-list">
+                    <div class="top">
+                  <img src="logo0.jpg" alt="">
+                  <a href="#">Log In</a>
+                </div>
+                <div class="list">
+                <div class="1">
+                  <a href="#">Find Talent</a>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="2">
+                  <a href="#">Find Work</a>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="3">
+                  <a href="#">Why Upwork</a>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="4">
+                  <a href="#">Enterprise</a>
+                </div>
+                </div>
+                <div class="sign2">
+                    <button class="sign2"><a href="#">Sign Up</a></button>
+                   </div>
+
+              </div>
+            </div>
+             <div class="navbar">
+               
                 <div class="nav-wrapper">
              <div class="nav-left">
+                
                 <span class="hamburger" onclick="openMenu()">&#9776;</span>
-          <a herf="javascript: void(0)" class="buttonX" onclick="closeMenu()">&times;</a>
+                <script src="kowshik.js"></script>
 
                 <img src="logo0.jpg" alt="my logo">
-                <li>
-                    <a href="#">Find Talent</a>
-                   <i class="fa-solid fa-chevron-down"></i>
+                <div class="dropdown1">
+                
+                    <p>Find Talent <i class="fa-solid fa-chevron-down"></i></p>
                    
-                </li>   
-                <li>
-                    <a href="#">Find Work</a>
-                   <i class="fa-solid fa-chevron-down"></i>
-                </li>  
-                <li>
-                    <a href="#">Why Upwork</a>
-                   <i class="fa-solid fa-chevron-down"></i>
-                </li>  
-                <li>
-                    <a href="#">Enterprise</a>
-                </li> 
-            </div> 
-            <div class="nav-right">
+                   <div class="drop-list">
+                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil repellendus
+                            similique distinctio incidunt, asperiores recusandae rerum reiciendis 
+                            tempore velit dicta, quaerat nemo fugit error a magnam reprehenderit, 
+                            at corrupti cum?</p>
+                   </div>
+                 </div>
+                <div>
+                    <p>Find Work <i class="fa-solid fa-chevron-down"></i></p>
+                   
+                </div>
+                <div>
+                
+                    <p>Why Upwork <i class="fa-solid fa-chevron-down"></i></p>
+                   
+                </div>
+
+                <div>
+                
+                    <p>Enterprise</p>
+                </div>
+               
+              </div> 
+             </div>
+             <div class="nav-right">
                 <div class="search">
                     <div class="search-box">
                         <input type="text" class="search-input" placeholder="     search">
@@ -69,17 +112,17 @@
                 </div>
 
                     <div class="log">
-                     <li>
-                        <a href="#">Log In</a>
-                     </li>
+                    
+                        <p>Log In</p>
+                     
                     </div>
                     <div class="sign">
                      <button class="sign"><a href="#">Sign Up</a></button>
                     </div>
                 
-            </div>
+             </div>
         </div>
-         </div>
+         
         </nav>
         <div class="hero">
             <div class="hero-wrapper">
@@ -113,7 +156,7 @@
                     Start finding talent today-there's no cost until you hire.
                 </h2>
                 <div class="hire">
-                    <button class="sign"><a href="#">Find Talent</a></button>
+                    <button class="sign1"><a href="#">Find Talent</a></button>
                    <button class="f-w"><a href="#">Find Work</a></button> 
                    </div>
                    <h5>
@@ -142,12 +185,11 @@
             </div>
         </div>
         <div class="blog-3">
-            <img src="blog3.jpg" >
             <div class="inside">
                 <div class="insider">
-                <h3>For Clients</h3>
-                <h2>Find Talent<br/>your way</h2>
-                <p>Work with the largest network of independent <br/>
+                   <h3>For Clients</h3>
+                 <h2>Find Talent<br/>your way</h2>
+                 <p>Work with the largest network of independent <br/>
                      and get things done—from quick <br/>turnarounds to big transformations.</p>
                     </div>
                      <div class="inside-list">
@@ -278,6 +320,7 @@
             <h1 class="fade">Top skills in US</h1>
             <h1 class="fade">Project Catalog<sup>TM</sup></h1>
         </div>
+        <div class="skill-list">
         <div class="skill2">
             <a href="#">Data Entry Specialists</a><br/>
             <a href="#">Video Editors</a><br/>
@@ -315,6 +358,7 @@
             <a href="#">Web Designer</a><br/>
             <a href="#">Wordpress Developer</a><br/>
         </div>
+    </div>
     </div>
 </div>
 <div class="footer">
@@ -394,6 +438,59 @@
         <a href="#">Accessibility</a><br/>
     </div>
   </div> 
+     </div>
+
+     <div class="footer2">
+         <div class="footer2-wrapper">
+
+        <div class="idea">
+    <div class="flex1">
+     <p>For Clients</p>
+     <i class="fa-solid fa-chevron-down"></i>
+    </div>
+    <div class="flex1">
+     <p>For Talent</p>
+     <i class="fa-solid fa-chevron-down"></i>
+    </div>
+    <div class="flex1">
+     <p>Resources</p>
+     <i class="fa-solid fa-chevron-down"></i>
+    </div>
+    <div class="flex1">
+     <p>Company</p>
+     <i class="fa-solid fa-chevron-down"></i>
+    </div>
+   </div>  
+   
+   <div class="followers">
+       <p>Follow Us</p>
+       <div class="follow-flex">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-instagram"></i> 
+       </div>
+       <p>Mobile App</p>
+       <div class="mobile-flex">
+        <i class="fa-brands fa-apple"></i>
+        <i class="fa-brands fa-android"></i>
+       </div>
+    </div>
+       <div class="last-list">
+        <p>© 2015 - 2022 Upwork® Global Inc.</p>
+        <a href="#">Terms of Service</a><br/>
+        <a href="#">Privacy Policy</a><br/>
+        <a href="#">CA Notice at Collection</a><br/>
+        <a href="#">Cookie Settings</a><br/>
+        <a href="#">Accessibility</a><br/>
+       </div>
+   
+
+  
+
+</div>
+
      </div>
         
     
