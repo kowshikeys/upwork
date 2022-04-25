@@ -1,12 +1,4 @@
-@font-face {
-  font-family: neueMontreal;
-  src: url(/Users/kowshikraj/Desktop/neue-montreal-free-demo-pangram-pangram-030418/NeueMontreal-Light.otf)
-    format("opentype");
-}
 
-p{
-    font-family: neueMontreal;
-}
 
 * {
   margin: 0;
@@ -14,6 +6,14 @@ p{
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+  
+}
+h1{
+    font-family: 'Alice', serif;
+}
+p,h2,h3,h4,h5,h6,a{
+    font-family: 'Alice', serif;
+font-family: 'Roboto', sans-serif;
 }
 body {
   overflow-x: hidden;
@@ -24,6 +24,7 @@ body {
   margin: auto;
 }
 .dropdown {
+  position: relative;
   display: none;
 }
 
@@ -38,6 +39,7 @@ button {
 }
 .dropdown1 {
   position: relative;
+  
  
 }
 .navbar {
@@ -51,21 +53,53 @@ button {
   right: 0;
 }
 .drop-list {
-    
+  width: 1000px;
   display: none;
-  position: absolute;
+  top: 50px;
   background-color: white;
-  z-index: 3;
-  top: 40px;
+  z-index: 15;
+position: absolute;
 }
 .dropdown1:hover .drop-list{ 
- display: block; 
+ display: none; 
  }
 .drop-list p {
   font-size: 30px;
   color: black;
   font-family: neue;
+  
 }
+.more{
+    position: relative;
+    
+}
+.drop{
+    display: none;
+    line-height: 3;
+    position: absolute;
+    margin-top: 10px;
+    right: 10px;
+    box-shadow: 0 2px 10px 0 rgb(0, 0, 0, .3);
+    background-color: #fff;
+    width: 250px;
+}
+.drop p{
+    display: none;
+    color: #5e6d55;
+}
+.drop p:hover{
+    background-color: #d0dfce;
+    color: #14a800;
+}
+.drop p{
+    padding-left: 10px;
+    
+}
+.more:hover .drop p{
+    display: block;
+}
+
+
 .nav-wrapper {
   display: flex;
   align-items: center;
@@ -180,6 +214,10 @@ button {
 }
 .sign1:hover {
   background-color: #387c2f;
+}
+.drop{
+    position: absolute;
+    display: block;
 }
 .hero {
   width: 100%;
@@ -342,6 +380,7 @@ button {
   color: white;
   font-size: 70px;
   margin-bottom: 20px;
+  font-family: 'Alice', serif;
 }
 .insider p {
   color: white;
@@ -355,9 +394,12 @@ button {
   align-items: center;
   gap: 20px;
 }
+.box1 h1{
+    font-family: 'Alice', serif;
+    font-family: 'Roboto', sans-serif;
+}
 .box1 {
   width: 100%;
-
   background-color: #14a800;
   color: white;
   padding: 1em;
@@ -365,34 +407,8 @@ button {
   cursor: pointer;
 }
 
-.box2 {
-  width: 100%;
 
-  background-color: #14a800;
-  padding: 1em;
-  color: white;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-.box3 {
-  width: 100%;
-
-  background-color: #14a800;
-  padding: 1em;
-  color: white;
-  border-radius: 10px;
-  cursor: pointer;
-}
 .box1:hover {
-  background-color: white;
-  color: #14a800;
-}
-.box2:hover {
-  background-color: white;
-  color: #14a800;
-}
-.box3:hover {
   background-color: white;
   color: #14a800;
 }
@@ -422,7 +438,7 @@ button {
 }
 .blog-4-left h2 {
   font-size: 40px;
-  font-weight: 200;
+  font-weight: 400;
   line-height: 2;
 }
 .blog-4-left p {
@@ -597,7 +613,7 @@ button {
 }
 .skill-list{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 .skill1 {
   font-size: larger;
@@ -809,7 +825,7 @@ button {
 
 
 
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
   .main {
     width: 100%;
     margin: 0;
@@ -853,6 +869,12 @@ button {
   }
   .blog-left {
     padding: 1em;
+  }
+  .blog-3{
+      margin-bottom: 0;
+  }
+  .hero2{
+      gap: 0;
   }
 }
 
@@ -918,7 +940,7 @@ button {
   }
   .hero2 {
     grid-template-columns: 1fr;
-    gap: 10px;
+    gap: 0;
     margin-bottom: 0;
   }
   .blog-4-left {
@@ -992,34 +1014,71 @@ button {
 @media (max-width: 550px) {
   .main {
     width: 100%;
-    padding-left: 1em;
+    
+  }
+  .blog{
+      padding-top: 100px;
+  }
+
+  .brand{
+      gap: 0;
   }
   .navbar {
     place-items: center;
   }
-  .sign {
-    height: 30px;
+  .nav-wrapper{
+      padding: 0.5em;
   }
+  .sign {
+      width: 70px;
+    height: 25px;
+  }
+  .sign a{
+      font-size: 12px;
+  } 
   .blog-right {
     display: none;
   }
   .blog-left {
     width: 100%;
+    padding: 0.5em;
   }
+
   .blog-2 {
     display: block;
   }
   .blog-2-list {
     padding: 1em;
   }
+  .blog-4-left h1{
+      font-size: 45px;
+  }
+  .blog-4-left h2{
+    font-size: 30px;
+}
+.blog-4-left{
+    padding: 1em;
+}
+.blog-4-right{
+    padding-top: 40px;
+}
   .trust h1 {
     font-size: 45px;
   }
   .skill1 {
     display: flex;
     flex-direction: row;
+    padding: 1em;
   }
-  .footer2{
-      margin-left: 1em;
+  .container{
+      gap: 0;
   }
+
+  .container-box1{
+      border-radius: 0;
+  }
+  .container-box2{
+    border-radius: 0;
+}
+
 }
